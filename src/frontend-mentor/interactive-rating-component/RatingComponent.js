@@ -2,8 +2,10 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./RatingComponent.css";
 import iconStar from "./assets/icon-star.svg";
+import { Link } from "react-router-dom";
 
-const RatingComponent = () => {
+const RatingComponent = ({ rating, setRating }) => {
+	console.log(rating);
 	return (
 		<>
 			<Helmet>
@@ -29,14 +31,25 @@ const RatingComponent = () => {
 							feedback is appreciated to help us imporve our offering!
 						</p>
 					</div>
-					<ul>
+					<ul
+						onClick={(event) => {
+							setRating(Number(event.target.innerHTML));
+						}}
+					>
 						<li>1</li>
 						<li>2</li>
 						<li>3</li>
 						<li>4</li>
 						<li>5</li>
 					</ul>
-					<button className="submit-btn">SUBMIT</button>
+					{/* <button className="submit-btn">
+						<Link to="/thankyou" className="submit-link">
+							SUBMIT
+						</Link>
+					</button> */}
+					<Link to="thankyou" className="submit-btn">
+						SUBMIT
+					</Link>
 				</div>
 			</div>
 		</>

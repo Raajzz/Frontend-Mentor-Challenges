@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); */
 
 .card-container{
   display: flex;
@@ -86,6 +86,7 @@ li:hover:nth-child(5){
 }
 
 .submit-btn{
+  display: inline-block;
   width: 100%;
   padding: 0.7rem 0;
   background-color: #fb7413;
@@ -95,6 +96,8 @@ li:hover:nth-child(5){
   border-radius: 25px;
   letter-spacing: 3px;
   font-size: 14px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .submit-btn:hover{
