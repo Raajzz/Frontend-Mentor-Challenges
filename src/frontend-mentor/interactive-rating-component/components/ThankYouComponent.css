@@ -1,0 +1,39 @@
+.image-tag{
+  display: block;
+  margin: 1.25rem auto 1.25rem auto;
+}
+
+.rating-container{
+  margin-bottom: 1.5rem;
+}
+
+.selection{
+  color: #fb7413;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.bgn-styling{
+  /* background-color: #20303d; */
+  background-color: #252d37;
+  padding: 6px 17px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.content-container{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.content-container h1{
+  margin-bottom: 1rem;
+  font-size: 26px;
+}
+
+.content-container p{
+  color: #878e98;
+  font-size: 14.5px;
+  line-height: 1.6;
+}

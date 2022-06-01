@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import RatingComponent from "./RatingComponent";
-import ThankYouComponent from "./ThankYouComponent";
+import RatingComponent from "./components/RatingComponent";
+import ThankYouComponent from "./components/ThankYouComponent";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -9,10 +9,7 @@ const App = () => {
 	return (
 		<Router>
 			<Routes>
-				<Route
-					path="/"
-					element={<RatingComponent rating={rating} setRating={setRating} />}
-				/>
+				<Route path="/" element={<RatingComponent setRating={setRating} />} />
 				<Route
 					path="/thankyou"
 					element={<ThankYouComponent rating={rating} />}

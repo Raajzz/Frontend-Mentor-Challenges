@@ -1,24 +1,14 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import "./Component.css";
 import "./RatingComponent.css";
-import iconStar from "./assets/icon-star.svg";
+import iconStar from "../assets/icon-star.svg";
 import { Link } from "react-router-dom";
+import HelmetComponent from "./HelmetComponent";
 
-const RatingComponent = ({ rating, setRating }) => {
-	console.log(rating);
+const RatingComponent = ({ setRating }) => {
 	return (
 		<>
-			<Helmet>
-				<title>Interactive Rating Component</title>
-				<style>
-					{`
-          body{
-            background-color:#141519;
-            color: white;
-          }
-        `}
-				</style>
-			</Helmet>
+			<HelmetComponent />
 			<div className="card-container">
 				<div className="card">
 					<div className="icon-container">
